@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CollectionUI Coming Soon</title>
+  <style type="text/css">
+  /* General Reset */
+  body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  }
+  
+  /* Centering Content */
+  .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  }
+  
+  /* Styling the Title */
+  .title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  color: #333;
+  text-shadow: 0 0 10px #ffcccc, 0 0 20px #ffe6cc, 0 0 30px #ccffcc, 0 0 40px #ccf2ff;
+  animation: softGlow 4s infinite;
+  }
+  
+  /* Styling the Wave Animation for Each Letter */
+  .subtitle {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  }
+  
+  .letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #555;
+  display: inline-block;
+  animation: wave 1.5s infinite ease-in-out;
+  }
+  
+  .letter:nth-child(1) { animation-delay: 0s; }
+  .letter:nth-child(2) { animation-delay: 0.1s; }
+  .letter:nth-child(3) { animation-delay: 0.2s; }
+  .letter:nth-child(4) { animation-delay: 0.3s; }
+  .letter:nth-child(5) { animation-delay: 0.4s; }
+  .letter:nth-child(6) { animation-delay: 0.5s; }
+  .letter:nth-child(7) { animation-delay: 0.6s; }
+  .letter:nth-child(8) { animation-delay: 0.7s; }
+  .letter:nth-child(9) { animation-delay: 0.8s; }
+  .letter:nth-child(10) { animation-delay: 0.9s; }
+  
+  /* Keyframe Animation for the Wave Effect */
+  @keyframes wave {
+  0%, 100% {
+  transform: translateY(0);
+  }
+  50% {
+  transform: translateY(-10px);
+  }
+  }
+  
+  /* Glow Animation for the Title */
+  @keyframes softGlow {
+  0% {
+  text-shadow: 0 0 10px #ffcccc, 0 0 20px #ffe6cc, 0 0 30px #ccffcc, 0 0 40px #ccf2ff;
+  }
+  33% {
+  text-shadow: 0 0 10px #ffe6cc, 0 0 20px #ccffcc, 0 0 30px #ccf2ff, 0 0 40px #e6ccff;
+  }
+  66% {
+  text-shadow: 0 0 10px #ccffcc, 0 0 20px #ccf2ff, 0 0 30px #e6ccff, 0 0 40px #ffcccc;
+  }
+  100% {
+  text-shadow: 0 0 10px #ffcccc, 0 0 20px #ffe6cc, 0 0 30px #ccffcc, 0 0 40px #ccf2ff;
+  }
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">CollectionUI</h1>
+    <p class="subtitle">
+      <span class="letter">C</span>
+      <span class="letter">o</span>
+      <span class="letter">m</span>
+      <span class="letter">i</span>
+      <span class="letter">n</span>
+      <span class="letter">g</span>
+      &nbsp;
+      <span class="letter">S</span>
+      <span class="letter">o</span>
+      <span class="letter">o</span>
+      <span class="letter">n</span>
+    </p>
+  </div>
+</body>
+</html>
